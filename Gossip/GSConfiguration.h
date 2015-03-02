@@ -10,12 +10,12 @@
 
 
 /// Supported transport types.
-typedef enum {
-    GSUDPTransportType, ///< UDP transport type.
-    GSUDP6TransportType, ///< UDP on IPv6 transport type.
-    GSTCPTransportType, ///< TCP transport type.
-    GSTCP6TransportType, ///< TCP on IPv6 transport type.
-} GSTransportType;
+typedef NS_ENUM(NSUInteger, GSTransportType) {
+    GSTransportTypeUDP, ///< UDP transport type.
+    GSTransportTypeUDP6, ///< UDP on IPv6 transport type.
+    GSTransportTypeTCP, ///< TCP transport type.
+    GSTransportTypeTCP6, ///< TCP on IPv6 transport type.
+};
 
 
 /// Main class for configuring a SIP user agent.

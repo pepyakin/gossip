@@ -27,7 +27,7 @@
     _logLevel = 2;
     _consoleLogLevel = 2;
     
-    _transportType = GSUDPTransportType;
+    _transportType = GSTransportTypeUDP;
     
     // match clock rate to default number provided by PJSIP.
     // http://www.pjsip.org/pjsip/docs/html/structpjsua__media__config.htm#a24792c277d6c6c309eccda9047f641a5

@@ -117,10 +117,10 @@
     
     pjsip_transport_type_e transportType = 0;
     switch (_config.transportType) {
-        case GSUDPTransportType: transportType = PJSIP_TRANSPORT_UDP; break;
-        case GSUDP6TransportType: transportType = PJSIP_TRANSPORT_UDP6; break;
-        case GSTCPTransportType: transportType = PJSIP_TRANSPORT_TCP; break;
-        case GSTCP6TransportType: transportType = PJSIP_TRANSPORT_TCP6; break;
+        case GSTransportTypeUDP: transportType = PJSIP_TRANSPORT_UDP; break;
+        case GSTransportTypeUDP6: transportType = PJSIP_TRANSPORT_UDP6; break;
+        case GSTransportTypeTCP: transportType = PJSIP_TRANSPORT_TCP; break;
+        case GSTransportTypeTCP6: transportType = PJSIP_TRANSPORT_TCP6; break;
     }
     
     GSReturnNoIfFails(pjsua_transport_create(transportType, &transportConfig, &_transportId));
