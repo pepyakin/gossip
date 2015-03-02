@@ -10,6 +10,6 @@
 
 @interface GSIncomingCall : GSCall
 
-- (id)initWithCallId:(int)callId toAccount:(GSAccount *)account;
+- (instancetype)initWithCallId:(int)callId toAccount:(GSAccount *)account;
 
 @end
