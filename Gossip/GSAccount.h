@@ -11,13 +11,13 @@
 
 
 /// Account Status enum.
-typedef enum {
+typedef NS_ENUM(NSUInteger, GSAccountStatus) {
     GSAccountStatusOffline, ///< Account is offline or no registration has been done.
     GSAccountStatusInvalid, ///< Gossip has attempted registration but the credentials were invalid.
     GSAccountStatusConnecting, ///< Gossip is trying to register the account with the SIP server.
     GSAccountStatusConnected, ///< Account has been successfully registered with the SIP server.
     GSAccountStatusDisconnecting, ///< Account is being unregistered from the SIP server.
-} GSAccountStatus; ///< Account status enum.
+}; ///< Account status enum.
 
 
 /// Delegate to receive account activity.
