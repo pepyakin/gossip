@@ -11,13 +11,13 @@
 
 
 /// Call session states.
-typedef enum {
+typedef NS_ENUM(NSUInteger, GSCallStatus) {
     GSCallStatusReady, ///< Call is ready to be made/pickup.
     GSCallStatusCalling, ///< Call is ringing.
     GSCallStatusConnecting, ///< User or other party has pick up the call.
     GSCallStatusConnected, ///< Call has connected and sound is now coming through.
     GSCallStatusDisconnected, ///< Call has been disconnected (user hangup/other party hangup.)
-} GSCallStatus;
+};
 
 
 // TODO: Video call support?

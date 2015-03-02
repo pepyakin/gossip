@@ -203,7 +203,7 @@
         } break;
     }
     
-    __block id self_ = self;
+    __block GSCall *self_ = self;
     dispatch_async(dispatch_get_main_queue(), ^{ [self_ setStatus:callStatus]; });
 }
 
