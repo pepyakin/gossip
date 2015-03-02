@@ -10,13 +10,13 @@
 #import "GSConfiguration.h"
 
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, GSUserAgentState) {
     GSUserAgentStateUninitialized = 0,
     GSUserAgentStateCreated = 1,
     GSUserAgentStateConfigured = 2,
     GSUserAgentStateStarted = 3,
     GSUserAgentStateDestroyed = -1, // TODO: Remove? Since it's equivalent to uninitialized.
-} GSUserAgentState;
+};
 
 
 /// Mains SIP user agent interface. Applications should configure the shared instance on startup.
